@@ -38,6 +38,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -271,6 +272,12 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .benefits {
@@ -377,9 +384,15 @@ body {
 }
 
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-heading {
@@ -389,18 +402,51 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-heading-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-heading {
+    margin-bottom: 50px;
+  }
 }
 
-.team {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
 
 .team__item {
-  width: 270px;
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .team__card {
@@ -433,7 +479,12 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .worker-social {
+    padding-bottom: 30px;
+  }
 }
 
 .worker-social__link {
