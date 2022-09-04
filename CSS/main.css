@@ -1309,7 +1309,7 @@ body {
   position: fixed;
   z-index: 2;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 48px;
   width: 100vw;
   height: 100vh;
   left: 0;
