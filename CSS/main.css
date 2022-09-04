@@ -416,6 +416,16 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .benefits__heading {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__heading {
+    text-align: start;
+  }
+}
 
 .benefits__description {
   font-weight: 400;
@@ -792,7 +802,7 @@ body {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
@@ -865,6 +875,7 @@ body {
   .address-block {
     text-align: start;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -931,6 +942,7 @@ body {
   .join-us {
     text-align: start;
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1235,6 +1247,8 @@ body {
 
 .policy__text {
   font-style: normal;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -1377,7 +1391,11 @@ body {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-nav__link:hover {
+.menu-nav__link:hover, .menu-nav__link:focus {
+  color: #2196f3;
+}
+
+.menu-nav__link.current-menu {
   color: #2196f3;
 }
 
