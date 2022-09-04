@@ -5,11 +5,32 @@
 }
 
 .footer-blocks {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.desktop-upper-block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .address-block {
-  margin-right: 70px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 70px;
+  }
 }
 
 .footer-web-logo {

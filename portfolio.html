@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/reset.css" />
-    <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="./CSS/main.css" />
     <title lang="en">Portfolio</title>
   </head>
@@ -57,6 +56,55 @@
             >
           </li>
         </ul>
+        <button class="menu-open" type="button">
+          <svg class="menu-open__icon" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-open"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden">
+          <button class="menu-close" type="button">
+            <svg class="menu-close__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="container-mob">
+            <div class="menu-nav-block">
+              <nav class="menu-nav">
+                <ul class="menu-nav__list list">
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link current link" href="index.html">Студія</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link link" href="portfolio.html">Портфоліо</a>
+                  </li>
+                  <li class="menu-nav__item">
+                    <a class="menu-nav__link link" href="">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-contact-block">
+              <ul class="menu-contact list">
+                <li class="menu-contact__item">
+                  <a class="menu-contact__tel-link link" href="tel:+380961111111">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="menu-contact__item">
+                  <a class="menu-contact__mail-link link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu-soc list">
+                <li class="menu-soc_item"><a class="menu-soc_link" href="">Instagram</a></li>
+                <li class="menu-soc_item"><a class="menu-soc_link" href="">Twitter</a></li>
+                <li class="menu-soc_item"><a class="menu-soc_link" href="">Facebook</a></li>
+                <li class="menu-soc_item"><a class="menu-soc_link" href="">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -83,12 +131,19 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/Laptop.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/laptop.jpg 1x, ./images/laptop-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/laptop-tab.jpg 1x, ./images/laptop-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/laptop-mob.jpg 1x, ./images/laptop-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img class="example__picture" src="./images/laptop-mob.jpg" alt="Ноутбук" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -104,12 +159,23 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/basketball.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/basketball.jpg 1x, ./images/basketball-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/basketball-tab.jpg 1x, ./images/basketball-tab-2x.jpg 2x"
+                      -2x
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/basketball-mob.jpg 1x, ./images/basketball-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img
+                      class="example__picture"
+                      src="./images/basketball-mob.jpg"
+                      alt="Постер New Orlean vs Golden Star" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -125,12 +191,22 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/restaurant.jpg"
-                    alt="Ресторан"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/restaurant.jpg 1x, ./images/restaurant-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/restaurant-tab.jpg 1x, ./images/restaurant-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/restaurant-mob.jpg 1x, ./images/restaurant-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img
+                      class="example__picture"
+                      src="./images/restaurant-mob.jpg"
+                      alt="Ресторан" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -146,12 +222,22 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/headphones.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/headphones.jpg 1x, ./images/headphones-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/headphones-tab.jpg 1x, ./images/headphones-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/headphones-mob.jpg 1x, ./images/headphones-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img
+                      class="example__picture"
+                      src="./images/headphones-mob.jpg"
+                      alt="Наушники" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -167,12 +253,19 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/boxes.jpg"
-                    alt="Боксеры"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/boxes.jpg 1x, ./images/boxes-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/boxes-tab.jpg 1x, ./images/boxes-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/boxes-mob.jpg 1x, ./images/boxes-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img class="example__picture" src="./images/boxes-mob.jpg" alt="Боксеры" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -188,12 +281,19 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/screen.jpg"
-                    alt="Экран"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/screen.jpg 1x, ./images/screen-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/screen-tab.jpg 1x, ./images/screen-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/screen-mob.jpg 1x, ./images/screen-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img class="example__picture" src="./images/screen-mob.jpg" alt="Экран" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -209,12 +309,19 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/magazine.jpg"
-                    alt="Журнал"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/magazine.jpg 1x, ./images/magazine-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/magazine-tab.jpg 1x, ./images/magazine-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/magazine-mob.jpg 1x, ./images/magazine-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img class="example__picture" src="./images/magazine-mob.jpg" alt="Журнал" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -230,12 +337,19 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/label.jpg"
-                    alt="Этикетка"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/label.jpg 1x, ./images/label-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="./images/label-tab.jpg 1x, ./images/label-tab-2x.jpg 2x"
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="./images/label-mob.jpg 1x, ./images/label-mob-2x.jpg 2x"
+                      media="(min-width: 480px" />
+                    <img class="example__picture" src="./images/label-mob.jpg" alt="Этикетка" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -251,12 +365,28 @@
             <li class="example__item">
               <a class="example__link link" href="">
                 <div class="example__box">
-                  <img
-                    class="example__picture"
-                    src="./images/laptop-typing.jpg"
-                    alt="Печатает на ноутбуке"
-                    width="370"
-                    height="294" />
+                  <picture>
+                    <source
+                      srcset="./images/laptop-typing.jpg 1x, ./images/laptop-typing-2x.jpg 2x"
+                      media="(min-width: 1200px" />
+                    <source
+                      srcset="
+                        ./images/laptop-typing-tab.jpg    1x,
+                        ./images/laptop-typing-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px" />
+                    <source
+                      srcset="
+                        ./images/laptop-typing-mob.jpg    1x,
+                        ./images/laptop-typing-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 480px" />
+                    <img
+                      class="example__picture"
+                      src="./images/laptop-typing-mob.jpg"
+                      alt="Печатает на ноутбуке" />
+                  </picture>
+
                   <p class="example__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -276,63 +406,65 @@
     <footer class="footer-address">
       <div class="container">
         <div class="footer-blocks">
-          <div class="address-block">
-            <a class="logo link footer--logo" href="index.html"
-              ><span class="logo_blue-color">Web</span>Studio
-            </a>
-            <address class="address">
-              <ul class="address__list list">
-                <li class="address__item">
-                  <a href="" class="address__location link">м. Київ, пр-т Лесі Українки, 26</a>
+          <div class="desktop-upper-block">
+            <div class="address-block">
+              <a class="logo link footer--logo" href="index.html"
+                ><span class="logo_blue-color">Web</span>Studio
+              </a>
+              <address class="address">
+                <ul class="address__list list">
+                  <li class="address__item">
+                    <a href="" class="address__location link">м. Київ, пр-т Лесі Українки, 26</a>
+                  </li>
+                  <li class="address__item">
+                    <a class="address__description link" href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a class="address__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="join-us">
+              <h3 class="join-us__heading">Приєднуйтесь</h3>
+              <ul class="join-us__list list">
+                <li class="join-us__item">
+                  <a class="join-us__link" href="">
+                    <svg class="join-us__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a class="address__description link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="join-us__item">
+                  <a class="join-us__link" href=""
+                    ><svg class="join-us__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+                  ></a>
                 </li>
-                <li class="address__item">
-                  <a class="address__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="join-us__item">
+                  <a class="join-us__link" href=""
+                    ><svg class="join-us__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="join-us__item">
+                  <a class="join-us__link" href=""
+                    ><svg class="join-us__icon" width="20" height="20">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+                  ></a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="join-us">
-            <h3 class="join-us__heading">Приєднуйтесь</h3>
-            <ul class="join-us__list list">
-              <li class="join-us__item">
-                <a class="join-us__link" href="">
-                  <svg class="join-us__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href=""
-                  ><svg class="join-us__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-                ></a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href=""
-                  ><svg class="join-us__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-                ></a>
-              </li>
-              <li class="join-us__item">
-                <a class="join-us__link" href=""
-                  ><svg class="join-us__icon" width="20" height="20">
-                    <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-                ></a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="subscribe">
             <p class="subscribe__heading">Підпишіться на розсилку</p>
             <form class="subscribe__form">
-              <label>
+              <label class="subscribe__label">
                 <input class="subscribe__email" type="email" name="email" placeholder="E-mail" />
               </label>
-              <button class="button button__icon" type="submit">
+              <button class="button" type="submit">
                 Підписатися
                 <svg class="button__icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -343,5 +475,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

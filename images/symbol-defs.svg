@@ -80,5 +80,11 @@
 <symbol id="icon-vector-policy" viewBox="0 0 42 32">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.64" d="M6.27 15.23l-0.221-0.211-0.221 0.208-3.088 2.928 0.244 0.234 11.422 10.893 0.221-0.211 24.285-23.167-0.243-0.231-3.047-2.906-0.221 0.211-20.995 20.011-8.135-7.76z"></path>
 </symbol>
+<symbol id="icon-open" viewBox="0 0 32 32">
+<path d="M6.402 11.738v-2.134h19.207v2.134h-19.207zM6.402 17.073h19.207v-2.134h-19.207v2.134zM6.402 22.409h19.207v-2.134h-19.207v2.134z"></path>
+</symbol>
+<symbol id="icon-menu-close" viewBox="0 0 32 32">
+<path d="M23.734 10.304l-1.504-1.504-5.963 5.962-5.962-5.962-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path>
+</symbol>
 </defs>
 </svg>

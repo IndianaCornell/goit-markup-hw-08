@@ -1,5 +1,10 @@
 .join-us {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-right: 93px;
+  }
 }
 
 .join-us__heading {
@@ -15,6 +20,7 @@
 
 .join-us__list {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
